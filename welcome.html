@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="welcome.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark  bg-transparent">
+    <div class="container-fluid">
+      <img
+        src="data:image/png;base64,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"
+        alt="logo" height="70px">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">about us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">contact us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">login us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- banner -->
+  <video src="projectbike.webm" contols loop autoplay muted></video>
+
+  <!-- card -->
+  <!-- subbanner -->
+  <div class="continer1">
+    <div class="title"data-aos="fade-right">
+      <h1>Lorem ipsum dolor sit.</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+    <img src="bike zone.jpg" alt="image"data-aos="fade-right">
+  </div>
+  <div class="continer2">
+    <img src="bike zone2.jpg" alt="image"data-aos="fade-left">
+    <div class="title"data-aos="fade-left">
+      <h1>Lorem ipsum dolor sit.</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+   
+  </div>
+  <div class="continer1">
+    <div class="title"data-aos="fade-right">
+      <h1>Lorem ipsum dolor sit.</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+    <img src="bike zone 3.jpg" alt="image" data-aos="fade-right" >
+  </div>
+  <div class="continer2">
+    <img src="bike zone 4.jpg" alt="image"data-aos="fade-left">
+    <div class="title"data-aos="fade-left">
+      <h1>Lorem ipsum dolor sit.</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+   
+  </div>
+  <!-- faq -->
+  <!-- fotter -->
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Company name
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Angular</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">React</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Vue</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Laravel</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@bikezone.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">bikezone.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init(
+        {
+          Offset:320,
+          duration:1500,
+        }
+      );
+    </script>
+
+</body>
+
+</html>
